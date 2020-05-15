@@ -115,6 +115,36 @@ header p{
 	width: 50%;
 }
 
+/*ESPECIALIDADES*/
+
+#especialidades{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	margin: 0 auto;
+
+}
+#especialidades div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+}
+#especialidade p{
+	line-height: 1.5;
+	margin: 2vh;
+	font-size: 1.2em;
+}
+#especialidades img{
+	margin: 10px 0;
+}
+#especialidades h2{
+	font-size: 2em;
+
+}
 
 @media screen and (min-width: 768px){
 
@@ -136,6 +166,8 @@ header{
 	justify-content: center;
 }
 
+/*SOBRE MIM*/
+
 #sobre{
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -154,5 +186,30 @@ header{
 	flex-basis: 300px;
 	padding: 0 10px;
 }
+
+/*ESPECIALIDADES*/
+
+#especialidades{
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+#especialidades h2{
+	text-align: center;
+	width: 100%;
+}
+
+#especialidades div{
+	flex-grow: 1;
+	flex-basis: 150px;
+	padding: 0 10px;
+	
+}
+
+
+
+
 
 }
