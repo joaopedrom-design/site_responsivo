@@ -20,6 +20,7 @@ p {
  /*cabeçalho ou barra de navegação*/
 
 .logo img {
+	width: 15%;
   border-radius: 50px;
 }
 
@@ -28,7 +29,7 @@ nav{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #D2691E;
+	background-color: #8B0000;
 	padding: 30px;
 }
 
@@ -58,7 +59,7 @@ nav ul li a{
   /*Header*/
 
 header{
-	background-image: url('../img/fundo.jpg');
+	background-image: url('../img/fundo2.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -80,7 +81,7 @@ header p{
 	color: #fff;
 	text-decoration: none;
 	padding: 10px 30px;
-	background-color:#D2691E;
+	background-color:#8B0000;
 	font-size: .9em;
 
 }
@@ -91,7 +92,7 @@ header p{
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	background-color: #D2691E;
+	background-color: #8B0000;
 	color: #fff
 
 }
@@ -148,20 +149,31 @@ header p{
 
 /*COMPETENCIAS*/
 #competencias{
+	background-color: #A0522D;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding-top: 20px;
 	margin-left: 20px;
-	margin-right: 25px;
+	margin-right: 20px;
+	width: 100%;
 }
 #competencia h2{
+	color: #FFFAF0;
 	margin-bottom: 20px;
 	margin-top: 10px;
 	font-size: 2em;
 	text-align: center;
+
 } 
-#competencias h3,p{
+#competencias h3{
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 1em;
+	text-align: center;
+}
+#competencias p{
+	background-color: #ffff;
 	margin-bottom: 20px;
 	margin-top: 10px;
 	font-size: 1em;
@@ -172,19 +184,134 @@ header p{
 	text-decoration: none;
 }
 #competencias img{
-	width: 100%;
+	width: 65%;
 	margin-bottom: 0;
 }
 #competencias .comp p{
-	border-left: 2px solid black;
-	border-right: 2px solid black;
-	border-bottom: 2px solid black;
+	border-left: 1.7px solid black;
+	border-right: 1.7px solid black;
+	border-bottom: 1.7px solid black;
 	margin-bottom: 0;
 	font-family: 'Amatic SC', 'Lato','Montserrat','Roboto Slab','Open Sans', sans-serif;
-	padding-right: 15px;
-	padding-left: 15px;
-	line-height: 1.5; 
+	padding-right: 10px;
+	padding-left: 10px;
+	line-height: 1.2; 
 }
+
+/* MEUS TRABALHOS*/
+.trab img:hover{
+-ms-transform: rotate(-10deg);
+-webkit-transform: rotate(-10deg);
+-moz-transform:rotate(-10deg);
+-o-transform:rotate(-10deg);
+transform: rotate(-10deg); 
+}
+.trab img{
+	border:10px groove #4169E1;
+}
+
+#hobby{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	background-color: #8B0000;
+	width: 100%;
+}
+
+#hobby h2{
+	color: #ffff;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 2em;
+	text-align: center; 
+}
+#hobby P{
+	color: #ffff;
+}
+
+.hobby{
+	width:80%;
+	align-items: center;
+	text-align: center;
+}
+
+.hobby h3{
+	color: #ffff;
+	font-size: 1.5em;
+	margin-top: 30px;
+	margin-bottom: 14px;
+
+}
+
+.hobby img{
+	width: 25%;
+/*	display:flex;
+/*	flex-direction: center;
+	align-items: center;
+	padding-bottom: center;
+	padding-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 5px;
+	border-image: 3px;	*/
+}
+.hobby img:hover{
+-ms-transform: rotate(-10deg);
+-webkit-transform: rotate(-10deg);
+-moz-transform:rotate(-10deg);
+-o-transform:rotate(-10deg);
+transform: rotate(-10deg); 
+}
+.hobby img{
+	border:10px groove #4169E1;
+
+}
+/*CONTATO*/
+
+#contato {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 100%; 
+}
+#contato h2{
+	margin-left: 20px ;
+	margin-width:20px;
+	margin-bottom:20px;
+	margin-top: 20px;
+	font-size: 2em;
+	text-align: center;
+
+}
+#contato > p{
+	margin-bottom: 20px;
+	font-size: 1.2em;
+	color: ;
+	text-align: center;
+}
+#contato a{
+	text-decoration: none;
+	color: ;
+	font-family: "Gochi Hand","Helvetica","Arial",sans-serif;
+	text-align: center;
+}
+#contato img{
+	width: 45%;
+}
+/**/
+footer{
+	text-align: center;
+	width: 100%;
+	background-color: #8B0000;
+	color: #ffff ;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 
 @media screen and (min-width: 768px){
 
@@ -263,5 +390,34 @@ header{
 	text-align: center;
 }
 
+#portfolio{
+	flex-direction:row;
+	flex-wrap: wrap;
+}
 
+#portfolio h2,h3{
+	width: 100%;
+	text-align: center;
+}
+
+#portfolio .port{
+	width: 33.333333%;
+	text-align:center;
+}
+
+#contato{
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	max-width: 100%
+	margin:0 auto;
+	text-align: center;
+	max-height: 40vh;
+	width: 100%;
+}
+#contato h2,
+#contato p{
+	width: 100%;
+	text-align: center;
+}
 }
